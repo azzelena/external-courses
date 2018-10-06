@@ -5,4 +5,4 @@ function numberOrString(num) {
         return 'number';
     }
 }
-console.log(numberOrString('gg'));
+module.exports = numberOrString;
