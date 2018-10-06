@@ -4,5 +4,5 @@ function numberOrString(num) {
     } else if(typeof num === 'number') {
         return 'number';
     }
-}
+};
 module.exports = numberOrString;
