@@ -1,8 +1,10 @@
 function numberOrString(num) {
+    var type;
     if(typeof num === 'string') {
-        return 'string';
+        type = 'string';
     } else if(typeof num === 'number') {
-        return 'number';
-    }
-};
+        type = 'number';
+    } 
+    return type;
+}
 module.exports = numberOrString;
