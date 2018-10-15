@@ -15,7 +15,7 @@ describe('Ex4. JS Objects Part 2', () => {
         task('02', code =>
             it('should create object without prototype', () =>
                 expect(Object.getPrototypeOf(code())).toBeNull()),
-        );
+            );
     });
 
     describe('Strings', () => {
@@ -41,13 +41,8 @@ describe('Ex4. JS Objects Part 2', () => {
 
         task('07', code =>
             it('should add ellipsis to string if length more than specified number', () =>
-<<<<<<< HEAD
                 expect(code('abcdefg', 5)).toBe('ab…')),
-    ); 
-=======
-                expect(code('abcdefg', 5)).toBe('abcd…')),
-        );
->>>>>>> 481827c456803ab3ccf951c6b3ab6090be700b8c
+    );
 
         task('08', code =>
             it('should lowerCamelCase input string', () =>
