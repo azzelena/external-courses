@@ -42,7 +42,7 @@ describe('Ex4. JS Objects Part 2', () => {
         task('07', code =>
             it('should add ellipsis to string if length more than specified number', () =>
                 expect(code('abcdefg', 5)).toBe('ab…')),
-        );
+    ); 
 
         task('08', code =>
             it('should lowerCamelCase input string', () =>
