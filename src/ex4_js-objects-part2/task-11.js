@@ -1,15 +1,19 @@
-var str = 'Быть или не быть, вот в чём вопрос.';
-var count = 0;
-    for(var i = 0; i < str.length; i++) {
-      for(var j = i + 1; j < str.length; j++) {
-            if(str[i] === str[j]) {
-                 var pos = str.indexOf(str[i]);
-            }
-         
-         }
-    }while (pos !== -1) {
-         count++;
-         pos = str.indexOf(str[i], pos + 1);
-        }
-        
-console.log(count);
+"use strict";
+var arr;
+var result = {};
+var i = 0;
+function findNumbers(str) {
+  arr = str.split('');
+  for(i; i < arr.length; i++) {
+    if(result[arr[i]] !== undefined) {
+      result[arr[i]]++;
+    } else {
+      result[arr[i]] = 1;
+    }
+  } for(var key in result) {
+          if(result.hasOwnProperty(key)) {
+            console.log(key + ' ' + result[key]); 
+          }
+  }
+}
+module.exports = findNumbers;
