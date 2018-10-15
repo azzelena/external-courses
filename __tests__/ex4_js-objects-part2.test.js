@@ -1,4 +1,4 @@
-const task = require('~utils').createTask('ex4_js-objects-part2');
+const {task} = require('~utils')('ex4_js-objects-part2');
 
 describe('Ex4. JS Objects Part 2', () => {
     describe('Prototypes', () => {
@@ -41,8 +41,13 @@ describe('Ex4. JS Objects Part 2', () => {
 
         task('07', code =>
             it('should add ellipsis to string if length more than specified number', () =>
+<<<<<<< HEAD
                 expect(code('abcdefg', 5)).toBe('ab…')),
     ); 
+=======
+                expect(code('abcdefg', 5)).toBe('abcd…')),
+        );
+>>>>>>> 481827c456803ab3ccf951c6b3ab6090be700b8c
 
         task('08', code =>
             it('should lowerCamelCase input string', () =>
@@ -59,10 +64,10 @@ describe('Ex4. JS Objects Part 2', () => {
         task('11', code => {
             beforeAll(() => spyOn(console, 'log'));
 
-            code('abbac');
-
-            it('should count each word count of entrance', () =>
-                expect(console.log.calls.count()).toBe(3));
+            it('should count each word count of entrance', () => {
+                code('abbac');
+                expect(console.log.calls.count()).toBe(3);
+            });
         });
     });
 
