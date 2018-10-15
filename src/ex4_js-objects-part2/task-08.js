@@ -6,8 +6,8 @@ function lowerCamelCase(str) {
 for(var i = 0; i < arr.length; i++) {
     arr[i] = arr[i].slice(0, 1).toLowerCase() + arr[i].slice(1);
 }
-for (var i = 1; i < arr.length; i++) { 
-	arr[i] = arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1);
+for (var j = 1; j < arr.length; j++) { 
+	arr[j] = arr[j].slice(0, 1).toUpperCase() + arr[j].slice(1);
 }
 result = arr.join('');
 return result;
