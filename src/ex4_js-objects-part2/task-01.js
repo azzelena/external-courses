@@ -1,7 +1,6 @@
 "use strict";
-var objPrototype;
 function findPropinPrototype(propName,obj){
-        if(!objPrototype.hasOwnProperty(propName) && propName in obj) {
+        if(!obj.hasOwnProperty(propName) && propName in obj) {
         return obj[propName]; 
     }
   return undefined;
