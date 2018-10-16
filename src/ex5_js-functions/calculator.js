@@ -18,5 +18,5 @@ function Calculator() {
     return multiplyRes;
      }
    };
-}
+};
    module.exports = Calculator;
