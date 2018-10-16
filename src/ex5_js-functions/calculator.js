@@ -18,5 +18,16 @@ function Calculator() {
     return multiplyRes;
      }
    };
-};
+   this.calculate = function(str) {
+     var arr = str.split(' ');
+     num1 = +arr[0];
+     oper = arr[1];
+     num2 = +arr[3];
+
+      if(!operations[oper] || isNaN(num1) || isNaN(num2)) {
+        return NaN;
+      }
+      return operations[oper](num1,num2);
+   }
+}
    module.exports = Calculator;
