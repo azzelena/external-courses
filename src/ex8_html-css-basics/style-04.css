@@ -1,0 +1,52 @@
+@font-face{
+    font-family: 'KaushanScript-Regular';
+    src: url('fonts/KaushanScript-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}    
+.ind {
+    text-indent: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0px;
+}
+#description {
+    background-image: url('back04.jpg');
+    width: 600px;
+}
+.horizontLine {
+    color: gray;
+    opacity: inherit;
+}
+#menu {
+    background-image: url('punkt.png');
+    background-size: 12px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+#table {
+   font-family: 'KaushanScript-Regular';
+    width: 60%;
+    height: 100px;
+}
+table {
+    border: 0px;
+}
+img {
+    width:"200px";
+    height:"100px";
+}
+#first {
+    font-family: fantasy;
+}
+#second {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#third {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#fourth {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#fifth {
+    font-family: cursive;
+}
