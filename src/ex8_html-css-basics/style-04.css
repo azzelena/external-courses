@@ -13,10 +13,6 @@
     background-image: url('back04.jpg');
     width: 600px;
 }
-.horizontLine {
-    color: gray;
-    opacity: inherit;
-}
 #menu {
     background-image: url('punkt.png');
     background-size: 12px;
