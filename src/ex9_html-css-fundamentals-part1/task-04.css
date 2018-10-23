@@ -1,0 +1,31 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black; 
+}
+td, td label {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    padding: 0;
+}
+input:checked:before {
+  content: '♘';
+  position: absolute;
+  width: 30px;
+  line-height: 40px;
+  left: 3px;
+  top: 200px;
+  font-size: 40px;
+  color: red;
+}
+input {
+  position: absolute;
+  top: -200px;
+  left: 0;
+}
+td label {
+    display: block;
+}
