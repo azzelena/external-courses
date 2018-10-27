@@ -5,13 +5,13 @@
     font-style: normal;
 }    
 .ind {
-    text-indent: 40px;
+    text-indent: 5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0px;
 }
 #description {
     background-image: url('back04.jpg');
-    width: 600px;
+    width: 100%;
 }
 .horizontLine {
     color: gray;
@@ -19,7 +19,7 @@
 }
 #menu {
     background-image: url('punkt.png');
-    background-size: 12px;
+    background-size: 1em;
     background-repeat: repeat-x;
     background-position: left bottom;
 }
