@@ -9,10 +9,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 0px;
 }
-#description {
-    background-image: url('back04.jpg');
-    width: 100%;
-}
 .horizontLine {
     color: gray;
     opacity: inherit;
@@ -27,9 +23,6 @@
    font-family: 'KaushanScript-Regular';
     width: 60%;
     height: 100px;
-}
-table {
-    border: 0px;
 }
 #first {
     font-family: fantasy;
