@@ -14,13 +14,12 @@ button {
     border: 8px double rgba(153, 152, 152, 0.801);
 
 }
-#star1 {
+.star {
     padding-right: 8px;
     font-size: 30px; 
-     opacity: 0.4;
+    opacity: 0.4; 
 }
-#star2 {
+.star:first-child {
     padding-left: 8px;
-    font-size: 30px;
-    opacity: 0.4;
+    padding-right: 0;
 }
