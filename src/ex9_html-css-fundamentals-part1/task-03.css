@@ -1,0 +1,25 @@
+button {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 75px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 19px;
+    background: linear-gradient(to top, rgba(199, 194, 194, 0.938), rgb(238, 236, 236));
+    color: rgba(0, 0, 0, 0.6);
+    box-shadow: inset -2px -2px rgba(102, 100, 100, 0.76);
+    margin-top: 20px;
+    border: 8px double rgba(153, 152, 152, 0.801);
+
+}
+.star {
+    padding-right: 8px;
+    font-size: 30px; 
+    opacity: 0.4; 
+}
+.star:first-child {
+    padding-left: 8px;
+    padding-right: 0;
+}
