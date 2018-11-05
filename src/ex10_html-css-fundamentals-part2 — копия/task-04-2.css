@@ -1,0 +1,12 @@
+.cell:nth-child(odd) {
+    background-color: #e2ebf3;
+}
+.cell:nth-child(even) {
+    background-color: #eef1f7;
+}
+.cell:nth-child(odd):hover {
+    background-color: #b8c7d49f;
+}
+.cell:nth-child(even):hover {
+    background-color: #cfdbeea4;
+}
