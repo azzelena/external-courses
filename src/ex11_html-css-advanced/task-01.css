@@ -6,8 +6,6 @@
 #figure {
     width:200px;
     height: 200px;
-    -webkit-mask-image: url(wall.png);
-    mask-image: url(wall.png); 
-    -webkit-clip-path: none;
-    clip-path: none; 
+    -webkit-clip-path: polygon(50% 0%, 80% 22%, 98% 35%, 77% 35%, 77% 76%, 48% 77%, 23% 77%, 23% 35%, 2% 35%, 18% 25%);
+    clip-path: polygon(50% 0%, 80% 22%, 98% 35%, 77% 35%, 77% 76%, 48% 77%, 23% 77%, 23% 35%, 2% 35%, 18% 25%);
 }
