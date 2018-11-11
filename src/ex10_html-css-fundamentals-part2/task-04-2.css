@@ -2,7 +2,7 @@
     background-color: #e2ebf3;
 }
 .cell:nth-child(even) {
-    background-color: #eef1f7;
+    background-color: #f0f4fc;
 }
 .cell:nth-child(odd):hover {
     background-color: #b8c7d49f;

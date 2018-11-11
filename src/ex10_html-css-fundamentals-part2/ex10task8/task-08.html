@@ -7,46 +7,48 @@
      <link rel="stylesheet" href="task-08.css">
      <title>Адаптив</title>
    </head>
-   <body>
+    <body>
        <img id="logo" src="images/logo.png">
-       <div class="communication-types_location">
-          <button class="header_buttons"><img class="icons" src="images/phone-call.png"></button>
-          <button class="header_buttons" id="loc"><img id="sec" class="icons" src="images/placeholder.png"></button>
-          <span id="location">Saudi Arabia. Alreyadah</span>
-          <button class="header_buttons"><img class="icons" src="images/mail.png"></button>
-       </div>
+          <div class="communication-types_location">
+            <button class="header_buttons"><img class="icons" src="images/phone-call.png"></button>
+            <button class="header_buttons" id="loc"><img id="sec" class="icons" src="images/placeholder.png"></button>
+            <span id="location">Saudi Arabia. Alreyadah</span>
+            <button class="header_buttons"><img class="icons" src="images/mail.png"></button>
+          </div>
         <header>
-            <div class="burger-menu">
-              <p></p>
-              <p></p>
-              <p></p>
+          <nav class="nav">
+            <input class="nav__check" type="checkbox" id="showmenu"/>
+            <label class="nav__showmenu" for="showmenu">&#9776;</label>
+            <label class="nav__back" for="showmenu"></label>
+            <ul class="menu">
+              <li><a class="menu__item" href="#">HOME</a></li>
+              <li><a class="menu__item" href="#">What about ISAMA</a></li>
+              <li><a class="menu__item" href="#">What we do?</a></li>
+              <li><a class="menu__item" href="#">Our Projects</a></li>
+              <li><a class="menu__item" href="#">Excellent Team</a></li>
+              <li><a class="menu__item" href="#">Contact</a></li>
+            </ul>
+          </nav>
+            <div class="header-menu">
+              <ul>
+                <li class="border-right_none"><a href="#" >HOME</a> <span class="arrow-up"></span> </li>
+                <li class="border-right_none"><a href="#" >What about ISAMA</a> <span class="arrow-up"></span></li>
+                <li class="border-right_none"><a href="#" >What we do?</a><span class="arrow-up"></span></li>
+                <li class="border-right_none"><a href="#" >Our Projects</a><span class="arrow-up"></span></li>
+                <li class="border-right_none"><a href="#" >Excellent Team</a><span class="arrow-up"></span></li>
+                <li class="border-right_none"><a href="#" >Contact</a><span class="arrow-up"></span></li>
+                <li class="border-right_none">
+                  <form action="https://www.yandex.ru/search/">
+                    <div class="search-field">
+                      <button class="serch-text" ><img class="search-button" src="images/search.png"></button>
+                      <input class="serch-text" type="text" name="text" placeholder="Type your search words">
+                    </div>
+                  </form>
+                </li>
+              </ul>
             </div>
-          <div class="header-menu">
-            <ul>
-              <li class="border-right_none"><a href="#" >HOME</a> <span class="arrow-up"></span> </li>
-              
-              <li class="border-right_none"><a href="#" >What about ISAMA</a> <span class="arrow-up"></span></li>
-             
-              <li class="border-right_none"><a href="#" >What we do?</a><span class="arrow-up"></span></li>
-
-              <li class="border-right_none"><a href="#" >Our Projects</a><span class="arrow-up"></span></li>
-
-              <li class="border-right_none"><a href="#" >Excellent Team</a><span class="arrow-up"></span></li>
-              
-              <li class="border-right_none"><a href="#" >Contact</a><span class="arrow-up"></span></li>
-
-              <li class="border-right_none">
-            <form action="https://www.yandex.ru/search/">
-              <div class="search-field">
-                  <button class="serch-text" ><img class="search-button" src="images/search.png"></button>
-                  <input class="serch-text" type="text" name="text" placeholder="Type your search words">
-            </div>
-          </form>
-          </li>
-         </ul>
-        </div>
-      </header>
-         <div id="main">
+        </header>
+          <div id="main">
             <div id="quote">
                 <span>LET'S DRAW SOME ARTS</span>
                 <span>&</span>
@@ -54,31 +56,31 @@
             </div>
           </div>
             <div class="slides">
-              <div id="slide1">
-              <img class="photoSlide" src="images/slide_1.jpg">
-              <span class="like_button"></span>
+              <div class="slide1">
+                <img class="photoSlide" src="images/slide_1.jpg">
+                <div class="like_button">Like</div>
               </div>
-              <div class="slide2">
-              <img class="photoSlide" src="images/slide_2.jpg">
-              <span class="like_button"></span>
+                <div class="slide2">
+                  <img class="photoSlide" src="images/slide_2.jpg">
+                  <div class="like_button">Like</div>
+                </div>
+                  <div class="next_button"><img src="images/next.png"></div>
+            </div>
+              <div id="articles">
+                <div class="article">
+                  <div class="img"><img class="iconParagraph" src="images/lamp.png"></div>
+                    <div class="text">
+                      <p>What about ISAMA</p>
+                      <span>ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads to a modern concept of professionalism. At ISAMA we believe even if you are good at what you do, you have a great product or you provide an excellent service. We still can present you a little better to the world, creating your full identity, provides you with your marketing plans, design your website, print your publications, design your logo's and offices. Simply we give your business the perfect image.</span>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="img"><img class="iconParagraph" src="images/tree.png"></div>
+                    <div class="text">
+                      <p>Why we exist</p>
+                      <span>Reaching customer satisfaction through providing them with cutting-edge technologies that give clients access to a wide range of tools, ensuring efficient and results-oriented communication solutions, which grant them a special character that distinguishes them from the others in the business.</span>
+                    </div>
+                </div>
               </div>
-              <div class="next_button"><img src="images/next.png"></div>
-         </div>
-         <div id="articles">
-            <div class="article">
-                <div class="img"><img class="iconParagraph" src="images/lamp.png" alt="lamp"></div>
-                <div class="text">
-                    <p>What about ISAMA</p>
-                    <span>ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads to a modern concept of professionalism. At ISAMA we believe even if you are good at what you do, you have a great product or you provide an excellent service. We still can present you a little better to the world, creating your full identity, provides you with your marketing plans, design your website, print your publications, design your logo’s and offices. Simply we give your business the perfect image.</span>
-                </div>
-            </div>
-            <div class="article">
-                <div class="img"><img class="iconParagraph" src="images/tree.png" alt="tree"></div>
-                <div class="text">
-                    <p>Why we exist</p>
-                    <span>Reaching customer satisfaction through providing them with cutting-edge technologies that give clients access to a wide range of tools, ensuring efficient and results-oriented communication solutions, which grant them a special character that distinguishes them from the others in the business.</span>
-                </div>
-            </div>
-        </div>
-   </body>
-</html>
+      </body>
+  </html>

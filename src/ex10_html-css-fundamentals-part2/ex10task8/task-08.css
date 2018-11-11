@@ -10,16 +10,16 @@ ul {
     margin: 0; 
     border-top: 0.3px solid rgba(122, 121, 121, 0.247);
 }
-li {
-   list-style: none;  
-   border: 0.3px solid rgba(122, 121, 121, 0.247);
-   border-bottom: none;
-   border-top:none;
-   font-size: 1.1rem;
-   text-align: center;
-   padding-top: 9px;
+.border-right_none {
+    list-style: none;  
+    border: 0.3px solid rgba(122, 121, 121, 0.247);
+    border-bottom: none;
+    border-top:none;
+    font-size: 1.1rem;
+    text-align: center;
+    padding-top: 9px;
 }
-li:last-child {
+.border-right_none:last-child {
     margin-left: 10rem;
     border-left: none;
 }
@@ -32,14 +32,14 @@ a {
     padding: 1.2em;
 }
 .arrow-up {
-  width: 0; 
-  height: 0; 
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid rgb(70, 191, 228);
-  display:flex;
-  margin:auto;
-  visibility: hidden;
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgb(70, 191, 228);
+    display:flex;
+    margin:auto;
+    visibility: hidden;
 }
 .border-right_none:first-child {
     border-left: none; 
@@ -62,14 +62,11 @@ header {
 .header-menu {
     padding-right: 7em;
 }
- .burger-menu {
-   display:none;
- }
- .header-menu a:hover {
-     color:rgb(70, 191, 228);
+.header-menu a:hover {
+    color:rgb(70, 191, 228);
  }
  .header-menu a:hover +  .arrow-up{
-     visibility: visible;
+    visibility: visible;
  }
  .header_buttons {
     display: inline-block;
@@ -140,7 +137,7 @@ header {
     background-repeat: no-repeat;
 }
 #logo {
-    width: 230px;
+    width: 23%;
     margin-left: 27rem;
     margin-top:1.9rem;
 }
@@ -181,22 +178,64 @@ header {
     display: flex;
     justify-content: flex-end;
     height: 180px;
-    margin-top: -640px;
-    margin-right: 290px;
+    margin-top: -70rem;
+    margin-right: 5rem;
     overflow: hidden;
 }
-.slides div {
+.slides .slide1, .slide2 {
     display: flex;
     position: relative;
 }
 .photoSlide {
     width: 23rem;  
 }
+.like_button {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+    font-size: 15px;
+    line-height: 7rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.like_button::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:contain;  
+}
+.slide1 .like_button {
+    color: #b9f387;
+    background-color: rgba(142, 212, 92, 0.774);
+}
+.slide1 .like_button::before {
+    background-image: url('images/like.png');
+}
+.slide2 .like_button {
+    color: #be9a2d;
+    background-color: rgba(238, 223, 124, 0.774);
+}
+.slide2 .like_button::before {
+    background-image: url('images/like-2.png');
+}
+.like_button:hover {
+    color: #fff;
+}
 .next_button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 8rem;
+    z-index: 3;
     background-color: rgb(238, 237, 237);
 }
 .next_button:hover {
@@ -204,21 +243,20 @@ header {
     cursor: pointer;
 }
 #articles{
-    margin:8% auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width:60%;
+    width:65%;
+    margin-top:20rem;
 }
 .article{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-self: flex-start;
     text-align: justify;
     flex-basis: 100%;
-    margin: 0 4%;
+    margin-right: 2rem;
 }
 .text p{
     font-size: 1.8rem;
@@ -235,14 +273,25 @@ header {
 .iconParagraph {
     margin-right: 10px;
 }
+.nav {
+    display: none;
+}
 @media  (max-width: 920px) {
-    .communication-types_location, .border-right_none, .slides, li:not(:last-child){
+    .communication-types_location,.border-right_none:not(:last-child), .slides, .menu::-webkit-scrollbar{
         display:none;
+    }
+    ul {
+        border: none;
+    }
+    #main {
+        margin-top:5%;
+        position: relative;
+        z-index: -1;
+        height: 400px;
     }
     #articles {
         display: flex;
         flex-direction: column;
-        margin:-25% auto;
     }
     .article {
         margin: 2% 4%;
@@ -252,29 +301,71 @@ header {
     }
     #logo {
         position: absolute;
-        margin-left:60rem;
-        margin-top:-2rem;
+        margin-left: 0;
+        left: 35%;
+        margin-top:-0.7rem;
     }
-    li:last-child {
+    .search-field {
+        position: absolute;
+        display: block;
+        right: 2%;
+        top:5%;
+    }
+    .border-right_none:last-child {
         margin-left:110rem;
         border: none;
     }
-    .burger-menu {
-        display: block;
-     } 
-     .burger-menu p {
-        display: block;
-        width: 50px;
-        height: 7px;
-        margin: 0 0 12px;
-        background-color: #2C87BE;
-     } 
-     .burger-menu + ul {
+    .nav__check {
+        display: none;
+    } 
+    .nav__showmenu, .nav__back{
+        cursor: pointer;
+    }
+    .nav {
+        user-select: none;
         display: block;
         position: absolute;
-        top: 10%;
-        padding: 8px 0;
-        background: #fff;
-        z-index: 5;    
-     }
+        left:2%;
+        padding-bottom: 2rem;
+    }
+    .nav__showmenu {
+        position: relative;
+        z-index: 3;
+        display: inline-block;
+        top:1.5rem;
+        font-size: 34px;
+        color:rgb(63, 121, 160);
+    }
+    .nav__back {
+        position: fixed;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 35%;
+        margin: 0;
+        padding: 17px 0;
+        text-transform: uppercase;
+        line-height: 2em;
+        background-color: #4681b1e1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        transform: translateX(-100%);
+        transition: transform .3s;
+        will-change: transform;
+        backface-visibility: hidden;
+    }
+    .menu__item {  
+        display: block; 
+        text-align: center;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        z-index: 5;
+    }
+    .menu__item:hover,.nav__showmenu:hover {opacity: 0.7;}
+    .nav__check:checked+.nav__showmenu {color:#fff;}
+    .nav__check:checked~.menu {transform: translateX(0);}
 }
