@@ -16,7 +16,6 @@
 a {
     text-decoration: none;
     color:rgb(167, 161, 161);
-    pointer-events: none;
 }
 .buttons {
     display: flex;
