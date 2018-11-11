@@ -6,7 +6,8 @@
 #figure {
     width:200px;
     height: 200px;
-    -webkit-mask-size:200px;
     -webkit-mask-image: url(wall.png);
-    mask-image: url(wall.png);
+    mask-image: url(wall.png); 
+    -webkit-clip-path: none;
+    clip-path: none; 
 }
