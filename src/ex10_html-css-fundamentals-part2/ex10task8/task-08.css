@@ -289,9 +289,10 @@ header {
         z-index: -1;
         height: 400px;
     }
-    #articles {
+     #articles {
         display: flex;
         flex-direction: column;
+        margin-top:0px;
     }
     .article {
         margin: 2% 4%;
