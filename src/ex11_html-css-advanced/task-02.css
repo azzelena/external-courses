@@ -33,18 +33,23 @@ body {
 /* second task */
 .ball { 
     position: absolute;
-    width: 5em;
-    height: 5em;
+    width: 70px;
+    height: 70px;
     background: -webkit-radial-gradient(50% 120%, circle cover, #81e8f6, #76deef 10%, #c898ff 80%, #6649e9 100%);
     border-radius: 50%;
     animation: jumping_ball 2s linear infinite alternate;
-    left:47%;
-    margin-top: 30em;
 }
+.border {
+    width: 70px;
+    height: 250px;
+    left:47%;
+    position: relative;
+    border-top: 3px solid rgb(109, 55, 180);
+    border-bottom: 3px solid rgb(109, 55, 180);
+  }
 @keyframes jumping_ball {
     from {
         top: 180px;
-        
     }
     50% {
         top:0%;
