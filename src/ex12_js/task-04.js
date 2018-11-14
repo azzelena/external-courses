@@ -1,6 +1,6 @@
 var tags = {};
 var node = 0;
-var body = document.querySelector('*');
+var allTags = document.querySelector('*');
 var class_list = {};
  function scanTAGS(elem) {
      var element = elem;
@@ -47,4 +47,4 @@ var class_list = {};
          console.log('Текстовых узлов: ' + node);
      }
  }
- scanDOM(body); 
+ scanDOM(allTags); 
