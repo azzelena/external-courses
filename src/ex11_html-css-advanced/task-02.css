@@ -1,0 +1,101 @@
+h2 {
+    text-align: center;
+}
+.the_last {
+    margin-top:13em;
+}
+body {
+    padding-bottom:10em;
+}
+/* first task */
+.loader {
+    width: 4em;
+    height: 4.2em;
+    background: radial-gradient(white, rgb(230, 175, 255));
+    border-radius: 10px;
+    margin: 10% auto;
+    animation: sk-rotateplane 2s infinite ease-in-out;
+  }
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(20deg) rotateY(20deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    } 
+    50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); 
+    } 
+    100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+/* second task */
+.ball { 
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: -webkit-radial-gradient(50% 120%, circle cover, #81e8f6, #76deef 10%, #c898ff 80%, #6649e9 100%);
+    border-radius: 50%;
+    animation: jumping_ball 2s linear infinite alternate;
+}
+.border {
+    width: 70px;
+    height: 250px;
+    left:47%;
+    position: relative;
+    border-top: 3px solid rgb(109, 55, 180);
+    border-bottom: 3px solid rgb(109, 55, 180);
+  }
+@keyframes jumping_ball {
+    from {
+        top: 180px;
+    }
+    50% {
+        top:0%;
+    }
+    to {
+        top:180px;
+    }
+}
+/* third task */
+.infinite_animation {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    background: radial-gradient(white, rgb(48, 139, 175));
+    left:47%;
+    margin-top: 4em;
+    animation: infinite_changes 10s linear infinite;
+    overflow: hidden;
+}
+@keyframes infinite_changes {
+    0% {
+         background: radial-gradient(white, rgb(48, 139, 175));
+         border-radius: 50%;
+         transform: rotate(0deg) skew(0deg,0deg) scale(1,1);
+    }
+    20% {
+        background: radial-gradient(white, rgb(48, 139, 175));
+        transform: rotate(0deg) skew(0deg,0deg) scale(1,1);
+        border-radius: 0;
+    }
+    40% {
+        background: linear-gradient(to bottom right, rgb(127, 235, 181), rgb(9, 105, 41)); 
+        transform: rotate(0deg) skew(0deg,0deg) scale(1,1);
+        border-radius: 0;
+    }
+    60% {
+        background: linear-gradient(to bottom right, rgb(127, 235, 181), rgb(9, 105, 41)); 
+        transform: rotate(0deg) skew(5deg,5deg) scale(2,1);
+    }
+    80% {
+        background: linear-gradient(to bottom right, rgb(127, 235, 181), rgb(9, 105, 41)); 
+        transform: rotate(180deg) skew(5deg,5deg) scale(1,1);
+    }
+    100% {
+        background: linear-gradient(to top, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%);
+        transform: rotate(180deg) skew(0deg,0deg) scale(1,1);
+        border-radius: 50%;
+    }
+}
