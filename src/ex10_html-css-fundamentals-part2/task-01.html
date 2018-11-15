@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+   <html lang="ru">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="task-01.css">
+     <title>TASK1</title>
+   </head>
+   <body>
+       <ul>
+           <li><a href="https://www.google.com">Searching</a></li>
+           <li><a href="https://www.youtube.com">YouTube</a></li>
+           <li><a href="https://www.card.com">Card</a></li>
+           <li><a href="https://www.gamesgames.com">Play</a></li>
+           <li><a href="https://ria.ru">News</a></li>
+           <li><a href="https://mail.ru">Mail</a></li>
+       </ul>
+       <ol start="7">
+            <li>Searching</li>
+            <li>Card</li>
+            <li>Market</li>
+            <li>News</li>
+            <li>Dictionaries</li>
+            <li>Pictures</li>
+            <li>Yet</li>
+            <li>
+            <ul>
+                    <li>Flight</li>
+                    <li>Auto</li>
+                    <li>Poster</li>
+                    <li>Blogs</li>
+            </ul> 
+          </li>
+        </ol>
+        <dl>
+            <dt>Tag</dt>
+                <dd>element of Hypertext Markup Language</dd>
+            <dt>The semantic Web</dt>
+                <dd>This direction of development of the World Wide Web, the aim of which is to provide information in a form suitable for machine processing</dd>
+        </dl>
+        <hr>
+        <p>CSS General content for pseudo-elements</p>
+        <table>
+                <thead>
+                <tr>
+                    <th>IE</th>
+                    <th>Firefox</th>
+                    <th>Chrome</th>
+                    <th>Safari</th>
+                    <th>Opera</th>
+                    <th>iOS Safari</th>
+                    <th>Opera Mini</th>
+                    <th>Android Browser</th>
+                    <th>Chrome for Android</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="2"></td>
+                    <td rowspan="4"></td>
+                    <td>27</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="5"></td>
+                    <td rowspan="4"></td>
+                    <td rowspan="5"></td>
+                    <td></td>
+                    <td rowspan="5"></td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>2.3</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>33</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>34</td>
+                    <td>5.1</td>
+                    <td>4.1</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>thirty</td>
+                    <td>35</td>
+                    <td>6.1</td>
+                    <td>6.1</td>
+                    <td>4.3</td>
+                </tr>
+                <tr>
+                    <td>eleven</td>
+                    <td>31</td>
+                    <td>36</td>
+                    <td>7</td>
+                    <td>23</td>
+                    <td>7.1</td>
+                    <td>7</td>
+                    <td>4.4</td>
+                    <td>36</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="9">Method of displaying text images before or after the given element's contents using the: before and after pseudo-elements</td>
+                </tr>
+                </tfoot>
+            </table>
+        <hr>
+        <form method="GET">
+                <fieldset>
+            <legend>Personal data</legend>
+            <label>Surname<input type="text"></label>
+            <br><br>
+            <label>First Name<input type="text"></label>
+            <br><br>
+            <label>Middle name<input type="text"></label>
+            <br><br>
+            <span>You are</span>
+            <input type="radio" name="gender" value="male"> male 
+            <input type="radio" name="gender" value="female"> female
+            <br><br>
+            <label>Age<input type="number" name="age" min="18" max="101"></label>
+            <br><br>
+            <span>Country of Residence</span>
+            <select size="1" name="country">
+                    <option value="Russia">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="England">England</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="China">China</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="France">France</option>
+                  </select>
+            <br><br>
+            <span>City</span>  
+            <input type="checkbox" name="city" value="Ryazan"> Ryazan 
+            <input type="checkbox" name="city" value="Moscow"> Moscow
+            <br><br>
+            <span>Photography</span>  
+            <input type="file" name="photo">
+            <hr>
+            <span>Title</span> 
+            <select size="8">
+                <optgroup label="Technologies">
+                    <option value="WM">Web Master</option>
+                    <option value="DA">Database Administrartor</option>
+                    <option value="CAD">Computer-aided design</option>
+                </optgroup>
+                <optgroup label="Finance">
+                        <option value="Economic Planning">Economic Planning</option>
+                        <option value="Management accounting">Management accounting</option>
+                        <option value="Budgeting and planning">Budgeting and planning</option>
+                    </optgroup>
+            </select>
+            <br><br>
+             Salary
+            <input type="range">
+            <br><br>
+            <textarea name="aboutYourself" rows="12" cols= "40" placeholder="Tell us about yourself. . ."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <br>
+                <label>Site<input type="text"></label>
+                <br><br>
+                <label>Email<input type="text"></label>
+                <br><br>
+                <label>Phone<input type="text"></label>
+                <br>
+            </fieldset>
+            <br>
+            <label>Password<input type="text" required></label>
+            <br> <br>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+        </form>
+   </body>
+</html>
