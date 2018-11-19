@@ -1,13 +1,12 @@
-var accord = document.getElementsByClassName("accordion");
-var i = 0;
- for (i; i < accord.length; i++) {
-  accord[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-      var menu = this.nextElementSibling;
-      if (menu.style.maxHeight){
-        menu.style.maxHeight = null;
-      } else {
-        menu.style.maxHeight = menu.scrollHeight + "px";
-      } 
-    });
-}
+var accord = document.getElementsByClassName('accordion title');
+var elem;
+ document.getElementById('container').addEventListener('click', function() {
+   var target = event.target;
+     if (target.tagName === 'BUTTON') {
+         elem = target.parentNode;
+         var title = document.getElementsByClassName('accordion title')[0];
+         title.classList.remove('title');
+         title.classList.add('close');
+         elem.className = 'accordion title';
+     }
+ });
