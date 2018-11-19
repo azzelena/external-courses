@@ -4,14 +4,14 @@ var allTags = document.querySelector('*');
 var class_list = {};
  function scanTAGS(elem) {
      var element = elem;
-     if(typeof tags[element.tagName] === 'undefined') {
+     if(tags[elem.tagName] === undefined) {
          tags[element.tagName] = 1;
      } else {
          tags[element.tagName] += 1;
      }
  }
  function scanCLASSES(elem, isClass) {
-     if(typeof class_list[elem.classList[isClass]] === 'undefined') {
+     if(class_list[elem.classList[isClass]] === undefined) {
         class_list[elem.classList[isClass]] = 1;
      }else{
         class_list[elem.classList[isClass]] = class_list[elem.classList[isClass]] + 1;
