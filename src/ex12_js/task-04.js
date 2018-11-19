@@ -25,14 +25,14 @@ var class_list = {};
      if (document.hasChildNodes()) {
          for(i; i < document.childNodes.length; i++) {
              var child = document.childNodes[i];
-             if (child.nodeType === 1) {
+             if (child.nodeType === child.ELEMENT_NODE) {
                 scanTAGS(child);
                  if(child.className){
                      for (let i = 0; i < child.classList.length; i++){
                         scanCLASSES(child,i);
                      }
                  }
-             } else if (child.nodeType === 3){
+             } else if (child.nodeType === child.TEXT_NODE){
                 scanNODES(child);
              }
          }
