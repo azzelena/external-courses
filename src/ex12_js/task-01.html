@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-   <html lang="ru">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="stylesheet" href="task-01.css">
-     <title>TASK1</title>
-    </head>
-     <body>
-      <div class="container">
-       <button class="accordion">Что такое HTML?</button>
-        <div class="block">
-            <p>HTML язык по своей сути не является языком программирования</p>
-        </div>
-            <button class="accordion">Что такое CSS?</button>
+    <html lang="ru">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="task-01.css">
+      <title>TASK1</title>
+     </head>
+      <body>
+        <div id="container">
+          <div class="accordion title">
+              <button class="button_title">Что такое HTML?</button>
               <div class="block">
-                <p>Каскадные таблицы стилей</p>
+                  <p>HTML язык по своей сути не является языком программирования</p>
               </div>
-                <button class="accordion">Что такое JavaScript?</button>
-                  <div class="block">
-                    <p>JavaScript – это «безопасный» язык программирования общего назначения</p>
-                  </div> 
-       </div>          
-    <script src="task-01.js"></script> 
-   </body>
-</html>
+          </div>
+     
+          <div class="accordion close">
+              <button class="button_title">Что такое CSS?</button>
+              <div class="block">
+                  <p>Каскадные таблицы стилей</p>
+              </div>
+          </div>
+          <div class="accordion close">
+              <button class="button_title">Что такое JavaScript?</button>
+              <div class="block">
+                  <p>JavaScript – это «безопасный» язык программирования общего назначения</p>
+              </div>
+          </div>
+      </div>
+     <script src="task-01.js"></script> 
+    </body>
+ </html> 
