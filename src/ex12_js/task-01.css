@@ -1,0 +1,27 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion {
+    width:50%;
+    text-align: left;
+    font-family: monospace;
+}
+.button_title {
+    background-color: rgba(146, 133, 255, 0.616);
+    color:#fff;
+    padding:20px;
+    width:100%;
+    border:none;
+    font-family: monospace;
+    cursor:pointer;
+}
+.title button, .button_title:hover {
+    background-color: rgba(126, 111, 194, 0.842);
+}
+.close .block {
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
