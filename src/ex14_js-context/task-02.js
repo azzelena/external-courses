@@ -44,15 +44,12 @@ function Hangman(input) {
         console.log(this.errorSymbols);
         return this;
     };
-    this.startAgain = function (input) {
-        this.word = input.toLowerCase();
-        this.result = [];
-        this.numberOfErrors = 6;
-        this.errorSymbols = [];
-        this.message = '';
-        for (var i = 0; i < this.word.length; i++){
+    this.startAgain = function (inputSecond) {
+        this.word = inputSecond.toLowerCase();
+        for (i; i < this.word.length; i++){
             this.result.push('_');
         }
+        return this;
     }
 }
  hangman.guess('w'); // "w________"
