@@ -1,17 +1,9 @@
 var hangman = new Hangman('webpurple');
 function Hangman(input) {
-    this.word = input;
-    this.numberOfErrors = 6; 
-    this.errorSymbols = [];
-    this.result = [];
-    this.message = '';
-    for (var i = 0; i < input.length; i++){
-        this.result.push('_');
-    }
     this.guess = function (letter) {
-        var position = this.word.indexOf(letter);
+        var position = this.input.indexOf(letter);
         if(position !== -1){
-            this.result = this.word.split('').map(function (item,i){
+            this.result = this.input.split('').map(function (item,i){
                 if(item === letter){
                     return letter;
                 }
@@ -45,12 +37,17 @@ function Hangman(input) {
         return this;
     };
     this.startAgain = function (inputSecond) {
-        this.word = inputSecond.toLowerCase();
-        for (i; i < this.word.length; i++){
+        this.input = inputSecond;
+        this.numberOfErrors = 6; 
+        this.errorSymbols = [];
+        this.result = [];
+        this.message = '';
+        for (var i = 0; i < inputSecond.length; i++){
             this.result.push('_');
-        }
-        return this;
+        } 
+     return this;
     }
+    this.startAgain(input);
 }
  hangman.guess('w'); // "w________"
  hangman.guess('e'); // "we______e"
