@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width:100%;
+    display: grid;
+    grid-template-columns: 200px 100%;
+    grid-template-rows: 40px 100% 40px ; 
+    margin: 0;
+ }
+.header {
+    background-color: rgb(54, 60, 75);
+    grid-column-start: 1;
+    grid-column-end: 3;
+ }
+.menu {
+    border-top: 8px solid rgb(22, 30, 43);
+}
+i {
+    margin-right: 15px;
+}
+#book_name {
+    font-size: 14px;
+    font-weight: 600;
+}
+.content {    
+    font-size: 0.8em;
+    grid-column-start: 1;
+    background-color: rgb(35, 43, 61);
+    color: rgb(119, 129, 156);
+ }
+ .button_addingBook {
+    height: 90px; 
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #addingBook {
+    border: none;
+    border-radius: 4px;
+    width: 14em;
+    height: 40px;
+    background-color: rgb(240, 119, 88);
+    color: white;
+ }
+a {
+    text-decoration: none; 
+    color: inherit;
+ }
+.recommendation_name {
+    margin-left:1em;
+}
+.item {
+    display: flex;
+    align-items: center;
+    padding:12px;
+ } 
+.item:hover{
+    background: rgb(6, 49, 240); 
+    filter: brightness(300%);
+ }
+.recommendations .item:first-child {
+    margin-top:20px;
+ }
+.recommendations .item:last-child {
+    margin-bottom: 20px;
+ }
+.recommendations{
+    border-top: 8px solid rgb(22, 30, 43);
+    border-bottom: 8px solid rgb(22, 30, 43);
+ }
+.marker {
+    font-size: 4.2em; 
+    line-height: 0.3em;
+    text-align: center; 
+ }
+#marker_1 {
+    color:red;
+ }
+#marker_2 {
+    color:yellow;
+ }
+#marker_3 {
+    color:rgb(29, 168, 202);
+ }
+#marker_4 {
+    color:rgb(123, 63, 190);
+ }
+#marker1 {
+    color: red;
+ } 
+#footer {    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: rgb(31, 39, 56);
+} 
+.reader_info {
+    padding: 10px;
+    line-height: 1.6;
+    margin-top:35px;
+ }
+.action_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.reader_info:last-child {
+    margin-bottom:150px;
+ }
+.general_info {
+    color: rgb(162, 188, 212);
+ }
+
+.timer {
+    margin-left:2em;
+    margin-top: 20px; 
+ }
+ #head_buttons {
+    margin-top: 2rem; 
+    margin-left: 1rem;
+ }
+.buttonsForBooks {
+    margin-right: 1rem;
+    padding:0.5rem;
+}
+#books-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-content: space-between;
+
+}
+#books-list div {
+    margin-left: 0.3rem;
+    margin-right:1.3rem;
+    margin-top:1rem;
+}
+.buttonsForBooks:hover {
+    background-color: rgba(121, 145, 180, 0.685);
+    color: white;
+    border-radius: 25px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    margin-top:1rem;
+}
+#textSearch {
+    margin-left: 20rem;
+}
